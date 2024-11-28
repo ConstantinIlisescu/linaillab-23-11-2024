@@ -1,1 +1,0 @@
-export const CONTACT_ME_BTN_LINK = "/contact-me"

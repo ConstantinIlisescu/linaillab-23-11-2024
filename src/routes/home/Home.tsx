@@ -3,9 +3,10 @@ import Container from "@/components/ui/container";
 import "./Home.css";
 import OutlineBtnWithIcon from "@/components/OutlineBtnWithIcon";
 import MainServicesContainer from "@/components/MainServicesContainer";
-import { MAIN, WELCOME, SERVICES } from "@/data/mainPage";
+import { WELCOME, SERVICES } from "@/data/mainPage";
 import { useIsVisible } from "@/utils/hooks/useIsVisible";
 import { useRef } from "react";
+import ContactMeBtn from "@/components/ContactMeBtn";
 
 const Home = () => {
   useScrollToEffect();
@@ -17,33 +18,23 @@ const Home = () => {
   const isVisible3 = useIsVisible(homeServices);
 
   return (
-    <>
+    <div className="my-bg-light">
       <div
         ref={home}
-        className={`home-section-bg-img mx-auto w-full max-w-6xl opacity-0 transition-opacity ease-in duration-1000 ${
+        className={`mx-auto w-full max-w-6xl opacity-0 transition-opacity ease-in duration-1000 ${
           isVisible1 ? "opacity-100" : "opacity-0"
         }`}
       >
         <Container>
           <div className="pt-28 pb-4 grid justify-items-stretch h-screen font-italiana">
-            <div className="text-start animate-slideInTop opacity-0 [--slideIn-delay:500ms]">
-              <p className="text-4xl md:text-5xl pb-4 text-cyan-500">
-                {MAIN.topRowFirstTextLine}
-              </p>
-              <p className="text-7xl md:text-7xl text-fuchsia-500">
-                {MAIN.topRowSecondTextLine}
-              </p>
-            </div>
-            <div className="text-end md:justify-self-center my-auto animate-slideInTop opacity-0 [--slideIn-delay:1000ms]">
-              <p className="text-5xl md:text-7xl pb-4">
-                {MAIN.middleRowFirstTextLine}
-              </p>
-              <p className="text-5xl md:text-7xl">
-                {MAIN.middleRowSecondTextLine}
-              </p>
-            </div>
-            <div className="text-start mt-auto md:text-end text-7xl text-cyan-500 pb-16 lg:pb-4 animate-slideInTop opacity-0 [--slideIn-delay:1500ms]">
-              {MAIN.bottomRowTextLine}
+            <div className="text-start md:justify-self-center my-auto animate-slideInTop opacity-0 [--slideIn-delay:1000ms]">
+              <h1 className="aclonica-regular">
+                ESCAPE <br />
+                YOUR <br />
+                EVERYDAY <br />
+                ROUTINE <br />
+              </h1>
+              <ContactMeBtn />
             </div>
           </div>
         </Container>
@@ -95,7 +86,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
-    </>
+    </div>
   );
 };
 

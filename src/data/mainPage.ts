@@ -1,10 +1,3 @@
-export const MAIN = {
-  topRowFirstTextLine: "Your",
-  topRowSecondTextLine: "Escape",
-  middleRowFirstTextLine: "From",
-  middleRowSecondTextLine: "Everyday",
-  bottomRowTextLine: "Routine",
-};
 
 export const WELCOME = {
   topRowTitleFirstLine: "WELCOME TO",

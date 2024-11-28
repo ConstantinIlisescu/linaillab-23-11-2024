@@ -1,4 +1,4 @@
-import Logo from "@/components/Logo";
+import Logo from "@/components/logo/Logo";
 import NavLinks from "@/components/NavLinks";
 import NavLinksMobile from "@/components/NavLinksMobile";
 import Container from "@/components/ui/container";
@@ -7,11 +7,11 @@ const Navigation = () => {
   return (
     <header className=" py-3 backdrop-blur-lg fixed w-full z-10">
       <Container>
-        <div className="flex justify-between">
+        <nav className="flex justify-between">
           <Logo />
           <NavLinks />
           <NavLinksMobile />
-        </div>
+        </nav>
       </Container>
     </header>
   );
