@@ -1,11 +1,4 @@
 
-export const WELCOME = {
-  topRowTitleFirstLine: "WELCOME TO",
-  topRowTitleSecondLine: "L.I Nail Lab",
-  description:
-    "L.I Nail Lab is a home-based nail salon located in the Hednesford neighbourhood, offering a unique and personalized experience that combines style and exceptional service. My cosy and inviting salon features top-of-the-line products, exclusive polish brands and colours, a range of free soft drinks and homemade coffee. My commitment to quality ensures that every visit to my salon feels like a luxurious and indulgent escape in the comfort of your own neighbourhood.",
-};
-
 export const SERVICES = {
   title: "Services",
   services: [

@@ -49,40 +49,62 @@ body * {
   color: rgb(var(--light-colour));
 }
 
-.gradient {
+.main-button-gradient {
   background-image: linear-gradient(
-    85deg,
-    hsl(22deg 29% 60%) 0%,
-    hsl(22deg 28% 58%) 8%,
-    hsl(22deg 26% 56%) 17%,
-    hsl(22deg 25% 55%) 25%,
-    hsl(21deg 23% 53%) 33%,
-    hsl(21deg 22% 51%) 42%,
-    hsl(21deg 21% 49%) 50%,
-    hsl(21deg 22% 48%) 58%,
-    hsl(21deg 22% 46%) 67%,
-    hsl(21deg 23% 44%) 75%,
-    hsl(20deg 23% 43%) 83%,
-    hsl(20deg 23% 41%) 92%,
-    hsl(20deg 24% 39%) 100%
+    90deg,
+    hsl(26deg 28% 95%) 0%,
+    hsl(20deg 26% 93%) 6%,
+    hsl(16deg 24% 92%) 13%,
+    hsl(14deg 23% 90%) 21%,
+    hsl(12deg 23% 88%) 29%,
+    hsl(10deg 22% 86%) 39%,
+    hsl(9deg 21% 85%) 51%,
+    hsl(8deg 21% 83%) 62%,
+    hsl(7deg 21% 81%) 71%,
+    hsl(6deg 20% 79%) 79%,
+    hsl(6deg 20% 78%) 87%,
+    hsl(5deg 20% 76%) 93%,
+    hsl(5deg 20% 74%) 100%
   );
 }
 
-.gradient:hover {
+.main-button-gradient:hover {
   background-image: linear-gradient(
-    90deg,
-    hsl(22deg 29% 60%) 0%,
-    hsl(22deg 28% 58%) 0%,
-    hsl(22deg 26% 56%) 0%,
-    hsl(22deg 25% 55%) 1%,
-    hsl(21deg 23% 53%) 1%,
-    hsl(21deg 22% 51%) 2%,
-    hsl(21deg 21% 49%) 3%,
-    hsl(21deg 22% 48%) 5%,
-    hsl(21deg 22% 46%) 7%,
-    hsl(21deg 23% 44%) 12%,
-    hsl(20deg 23% 43%) 21%,
-    hsl(20deg 23% 41%) 47%,
-    hsl(20deg 24% 39%) 100%
+    270deg,
+    hsl(26deg 28% 95%) 0%,
+    hsl(20deg 26% 93%) 6%,
+    hsl(16deg 24% 92%) 13%,
+    hsl(14deg 23% 90%) 21%,
+    hsl(12deg 23% 88%) 29%,
+    hsl(10deg 22% 86%) 39%,
+    hsl(9deg 21% 85%) 51%,
+    hsl(8deg 21% 83%) 62%,
+    hsl(7deg 21% 81%) 71%,
+    hsl(6deg 20% 79%) 79%,
+    hsl(6deg 20% 78%) 87%,
+    hsl(5deg 20% 76%) 93%,
+    hsl(5deg 20% 74%) 100%
   );
+}
+
+.gradient-text {
+  background: linear-gradient(
+    170deg,
+    hsl(5deg 20% 74%) 0%,
+    hsl(7deg 18% 70%) 21%,
+    hsl(9deg 17% 66%) 38%,
+    hsl(10deg 16% 62%) 50%,
+    hsl(12deg 16% 58%) 60%,
+    hsl(13deg 15% 54%) 68%,
+    hsl(14deg 14% 50%) 74%,
+    hsl(15deg 16% 46%) 80%,
+    hsl(16deg 18% 43%) 85%,
+    hsl(17deg 20% 39%) 89%,
+    hsl(18deg 23% 35%) 93%,
+    hsl(19deg 26% 32%) 97%,
+    hsl(20deg 30% 28%) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
