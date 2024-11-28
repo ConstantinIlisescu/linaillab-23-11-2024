@@ -30,7 +30,7 @@ const Home = () => {
         <Container>
           <div className="max-w-lg md:pl-16">
             <div className="text-4xl pb-10">
-              <p className="pb-2 aclonica-regular">
+              <p className="pb-2 aclonica-regular gradient-text">
                 WELCOME TO
                 <br />
                 L.I Nail Lab
@@ -53,7 +53,7 @@ const Home = () => {
         <Container>
           <div className="max-w-lg ml-auto md:pr-16">
             <div className="text-4xl pb-10 text-right ">
-              <p className="aclonica-regular">{SERVICES.title}</p>
+              <p className="aclonica-regular gradient-text">{SERVICES.title}</p>
             </div>
             <div className="space-y-8">
               {SERVICES.services.map((service, index) => (
