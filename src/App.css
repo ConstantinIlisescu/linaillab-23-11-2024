@@ -5,6 +5,23 @@
   --light-call-to-action: 251, 248, 247; /* #F6F2EF used as light gradient*/
   --dark-call-to-action: 183, 145, 123; /* #CAB2B0 used as dark gradient*/
   --overlay: 183, 145, 123, 0.5; /* #CAB2B0 used as dark gradient*/
+  --shadow-color: 15deg 10% 60%;
+  --shadow-elevation-low: -0.1px 0.6px 0.7px hsl(var(--shadow-color) / 0.35),
+    -0.1px 1.1px 1.2px -1.2px hsl(var(--shadow-color) / 0.35),
+    -0.2px 2.6px 2.9px -2.5px hsl(var(--shadow-color) / 0.35);
+  --shadow-elevation-medium: -0.1px 0.6px 0.7px hsl(var(--shadow-color) / 0.37),
+    -0.2px 2.1px 2.4px -0.8px hsl(var(--shadow-color) / 0.37),
+    -0.5px 5.4px 6.1px -1.7px hsl(var(--shadow-color) / 0.37),
+    -1.2px 13.1px 14.8px -2.5px hsl(var(--shadow-color) / 0.37);
+  --shadow-elevation-high: -0.1px 0.6px 0.7px hsl(var(--shadow-color) / 0.49),
+    -0.4px 4.1px 4.4px -0.4px hsl(var(--shadow-color) / 0.48),
+    -0.7px 7.6px 8.2px -0.7px hsl(var(--shadow-color) / 0.46),
+    -1.1px 12.4px 13.4px -1.1px hsl(var(--shadow-color) / 0.45),
+    -1.8px 19.5px 21px -1.4px hsl(var(--shadow-color) / 0.44),
+    -2.7px 30px 32.3px -1.8px hsl(var(--shadow-color) / 0.42),
+    -4.1px 45px 48.5px -2.1px hsl(var(--shadow-color) / 0.41),
+    -6px 65.5px 70.5px -2.5px hsl(var(--shadow-color) / 0.4),
+    -8.5px 92.6px 99.7px -2.8px hsl(var(--shadow-color) / 0.38);
 }
 
 /* Buttons font */
@@ -22,11 +39,14 @@
 }
 
 body {
-  background-color: rgb(var(--light-colour));
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.img-shadow {
+  box-shadow: var(--shadow-elevation-high);
 }
 
 /* Setting the main font colour to dark */
@@ -47,6 +67,10 @@ body * {
 }
 .my-text-light {
   color: rgb(var(--light-colour));
+}
+
+.oval-shape {
+  border-radius: 50%;
 }
 
 .main-button-gradient {
@@ -103,6 +127,28 @@ body * {
     hsl(18deg 23% 35%) 93%,
     hsl(19deg 26% 32%) 97%,
     hsl(20deg 30% 28%) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-light {
+  background: linear-gradient(
+    145deg,
+    hsl(0deg 14% 99%) 0%,
+    hsl(0deg 15% 97%) 8%,
+    hsl(1deg 15% 96%) 17%,
+    hsl(1deg 15% 95%) 25%,
+    hsl(1deg 15% 93%) 33%,
+    hsl(2deg 15% 92%) 42%,
+    hsl(2deg 15% 90%) 50%,
+    hsl(3deg 15% 89%) 58%,
+    hsl(3deg 15% 88%) 67%,
+    hsl(3deg 15% 86%) 75%,
+    hsl(4deg 16% 85%) 83%,
+    hsl(4deg 16% 84%) 92%,
+    hsl(4deg 16% 82%) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

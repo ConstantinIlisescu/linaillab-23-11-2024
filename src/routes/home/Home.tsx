@@ -10,12 +10,12 @@ const Home = () => {
   useScrollToEffect();
 
   return (
-    <div>
+    <div className="my-bg-light overflow-y-hidden">
       <div className="mx-auto w-full max-w-6xl">
-        <Container>
-          <div className="pt-28 pb-4 grid justify-items-stretch h-screen font-italiana">
-            <div className="text-start md:justify-self-center my-auto animate-slideInTop opacity-0 [--slideIn-delay:1000ms]">
-              <h1 className="aclonica-regular text-6xl gradient-text">
+        <div className="pt-10 md:pt-20 grid justify-items-stretch h-screen">
+          <div className=" hidden md:flex md:justify-self-center my-auto items-center gap-16 px-4">
+            <div>
+              <h1 className="aclonica-regular text-start text-xl lg:text-7xl gradient-text mb-8">
                 ESCAPE <br />
                 YOUR <br />
                 EVERYDAY <br />
@@ -23,31 +23,51 @@ const Home = () => {
               </h1>
               <ContactMeBtn />
             </div>
+            <img
+              src="images/hero.jpg"
+              className="oval-shape w-[60vw] md:w-[35vw] xl:w-[25vw] img-shadow rotate-12"
+              alt="oval image of a hand"
+            />
           </div>
-        </Container>
-      </div>
-      <div className="pt-28 mx-auto w-full max-w-6xl">
-        <Container>
-          <div className="max-w-lg md:pl-16">
-            <div className="text-4xl pb-10">
-              <p className="pb-2 aclonica-regular gradient-text">
-                WELCOME TO
-                <br />
-                L.I Nail Lab
-              </p>
+          <div className="relative md:hidden">
+            <div className=" absolute left-10 bottom-32 z-10 backdrop-blur-lg p-4">
+              <h1 className=" aclonica-regular text-start text-4xl gradient-text-light mb-8">
+                ESCAPE <br />
+                YOUR <br />
+                EVERYDAY <br />
+                ROUTINE <br />
+              </h1>
+              <ContactMeBtn />
             </div>
-            <p className=" pr-10 md:text-lg text-balance">
-              L.I Nail Lab is a home-based nail salon located in the Hednesford
-              neighbourhood, offering a unique and personalized experience that
-              combines style and exceptional service. My cosy and inviting salon
-              features top-of-the-line products, exclusive polish brands and
-              colours, a range of free soft drinks and homemade coffee. My
-              commitment to quality ensures that every visit to my salon feels
-              like a luxurious and indulgent escape in the comfort of your own
-              neighbourhood.
+            <img
+              src="images/hero.jpg"
+              className="absolute right-10 bottom-10 oval-shape w-[70vw] img-shadow rotate-12"
+              alt="oval image of a hand"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="pt-28 w-full flex ">
+        <div className="welcome-overlay"></div>
+        <div className="max-w-lg md:pl-16">
+          <div className="text-4xl pb-10">
+            <p className="pb-2 aclonica-regular gradient-text">
+              WELCOME TO
+              <br />
+              L.I Nail Lab
             </p>
           </div>
-        </Container>
+          <p className=" pr-10 md:text-lg text-balance">
+            L.I Nail Lab is a home-based nail salon located in the Hednesford
+            neighbourhood, offering a unique and personalized experience that
+            combines style and exceptional service. My cosy and inviting salon
+            features top-of-the-line products, exclusive polish brands and
+            colours, a range of free soft drinks and homemade coffee. My
+            commitment to quality ensures that every visit to my salon feels
+            like a luxurious and indulgent escape in the comfort of your own
+            neighbourhood.
+          </p>
+        </div>
       </div>
       <div className=" pt-28 mx-auto w-full max-w-6xl">
         <Container>
