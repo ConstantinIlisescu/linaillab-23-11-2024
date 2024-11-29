@@ -4,7 +4,8 @@ import "./Home.css";
 import OutlineBtnWithIcon from "@/components/OutlineBtnWithIcon";
 import MainServicesContainer from "@/components/MainServicesContainer";
 import { SERVICES } from "@/data/mainPage";
-import ContactMeBtn from "@/components/ContactMeBtn";
+import HeroMobile from "./HeroMobile";
+import HeroDesktop from "./HeroDesktop";
 
 const Home = () => {
   useScrollToEffect();
@@ -14,42 +15,10 @@ const Home = () => {
       <div className="mx-auto w-full max-w-6xl">
         <div className="pt-10 md:pt-20 grid justify-items-stretch h-screen">
           <div className=" hidden md:flex md:justify-self-center my-auto items-center gap-16 px-4">
-            <div>
-              <h1 className="aclonica-regular text-start text-xl lg:text-7xl gradient-text mb-8">
-                ESCAPE <br />
-                YOUR <br />
-                EVERYDAY <br />
-                ROUTINE <br />
-              </h1>
-              <ContactMeBtn />
-            </div>
-            <img
-              src="images/hero.jpg"
-              className="oval-shape w-[60vw] md:w-[35vw] xl:w-[25vw] img-shadow rotate-12"
-              alt="oval image of a hand"
-            />
+            <HeroDesktop />
           </div>
           <div className="relative md:hidden">
-            <div className=" absolute left-0 bottom-24 z-10 backdrop-blur-lg p-4 w-full">
-              <h1 className=" aclonica-regular text-start text-5xl gradient-text-light mb-8">
-                ESCAPE <br />
-                YOUR <br />
-                EVERYDAY <br />
-                ROUTINE <br />
-              </h1>
-              <ContactMeBtn />
-            </div>
-            <div className="absolute top-7 flex w-full justify-center">
-              <img
-                src="images/hero.jpg"
-                className="oval-shape w-[100vw] sm:w-[70vw] img-shadow rotate-12"
-                alt="oval image of a hand"
-              />
-            </div>
-
-            <div className="absolute bottom-7 flex justify-center w-full">
-              <img src="ArrowDown.svg" alt="" className="h-10" />
-            </div>
+            <HeroMobile />
           </div>
         </div>
       </div>
