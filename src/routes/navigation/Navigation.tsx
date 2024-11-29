@@ -5,9 +5,9 @@ import Container from "@/components/ui/container";
 
 const Navigation = () => {
   return (
-    <header className="backdrop-blur-lg fixed w-full z-10">
+    <header className="backdrop-blur-lg fixed w-full z-50">
       <Container>
-        <nav className="flex justify-between items-center">
+        <nav className="flex justify-between items-center py-4">
           <Logo />
           <NavLinks />
           <NavLinksMobile />
