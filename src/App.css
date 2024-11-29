@@ -22,6 +22,10 @@
     -4.1px 45px 48.5px -2.1px hsl(var(--shadow-color) / 0.41),
     -6px 65.5px 70.5px -2.5px hsl(var(--shadow-color) / 0.4),
     -8.5px 92.6px 99.7px -2.8px hsl(var(--shadow-color) / 0.38);
+  --shadow-elevation-high-up: -0.5px -0.1px 0.6px hsl(var(--shadow-color) / 0.36),
+    -1.8px -0.5px 2.1px -0.8px hsl(var(--shadow-color) / 0.36),
+    -4.4px -1.1px 5.1px -1.7px hsl(var(--shadow-color) / 0.36),
+    -10.8px -2.8px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
 }
 
 /* Buttons font */
@@ -47,6 +51,10 @@ body {
 
 .img-shadow {
   box-shadow: var(--shadow-elevation-high);
+}
+
+.img-shadow-up {
+  box-shadow: var(--shadow-elevation-high-up);
 }
 
 /* Setting the main font colour to dark */

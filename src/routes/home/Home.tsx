@@ -30,8 +30,8 @@ const Home = () => {
             />
           </div>
           <div className="relative md:hidden">
-            <div className=" absolute left-10 bottom-32 z-10 backdrop-blur-lg p-4">
-              <h1 className=" aclonica-regular text-start text-4xl gradient-text-light mb-8">
+            <div className=" absolute left-0 bottom-24 z-10 backdrop-blur-lg p-4 w-full">
+              <h1 className=" aclonica-regular text-start text-5xl gradient-text-light mb-8">
                 ESCAPE <br />
                 YOUR <br />
                 EVERYDAY <br />
@@ -41,7 +41,7 @@ const Home = () => {
             </div>
             <img
               src="images/hero.jpg"
-              className="absolute right-10 bottom-10 oval-shape w-[70vw] img-shadow rotate-12"
+              className="absolute  top-7 oval-shape w-[100vw] img-shadow-up rotate-12"
               alt="oval image of a hand"
             />
           </div>
