@@ -44,6 +44,9 @@ const Home = () => {
               className="absolute  top-7 oval-shape w-[100vw] img-shadow-up rotate-12"
               alt="oval image of a hand"
             />
+            <div className="absolute bottom-7 flex justify-center w-full">
+              <img src="ArrowDown.svg" alt="" className="h-10" />
+            </div>
           </div>
         </div>
       </div>
