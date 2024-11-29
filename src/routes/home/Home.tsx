@@ -39,11 +39,14 @@ const Home = () => {
               </h1>
               <ContactMeBtn />
             </div>
-            <img
-              src="images/hero.jpg"
-              className="absolute  top-7 oval-shape w-[100vw] img-shadow-up rotate-12"
-              alt="oval image of a hand"
-            />
+            <div className="absolute top-7 flex w-full justify-center">
+              <img
+                src="images/hero.jpg"
+                className="oval-shape w-[100vw] sm:w-[70vw] img-shadow rotate-12"
+                alt="oval image of a hand"
+              />
+            </div>
+
             <div className="absolute bottom-7 flex justify-center w-full">
               <img src="ArrowDown.svg" alt="" className="h-10" />
             </div>
