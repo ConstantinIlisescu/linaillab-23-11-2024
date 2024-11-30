@@ -11,7 +11,7 @@ const Home = () => {
   useScrollToEffect();
 
   return (
-    <div className="my-bg-light overflow-y-hidden">
+    <div className="my-bg-light overflow-hidden">
       <div className="mx-auto w-full max-w-6xl">
         <div className="pt-16 md:pt-20 grid justify-items-stretch h-screen">
           <div
@@ -20,8 +20,8 @@ const Home = () => {
           >
             <div
               className="z-10 
-            portrait:-translate-y-44
-             md:portrait:-translate-y-72  md:portrait:translate-x-12
+             portrait:-translate-y-44
+             md:portrait:-translate-y-96  md:portrait:translate-x-12
              ms-auto"
             >
               <h1 className="aclonica-regular text-start text-4xl md:text-6xl gradient-text mb-8">
@@ -42,7 +42,7 @@ const Home = () => {
           <div
             className="flex justify-center w-full 
           portrait:-translate-y-44
-          md:portrait:-translate-y-44"
+          md:portrait:-translate-y-[22rem]"
           >
             <img src="ArrowDown.svg" alt="" className="h-10" />
           </div>
