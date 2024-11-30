@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import ScaleUpMotion from "@/components/motions/ScaleUpMotion";
 
 interface ImgWithBorderProps {
   imgSrc: string;
@@ -15,11 +15,7 @@ const ImgWithBorder = ({
 }: ImgWithBorderProps) => {
   return (
     <div className={`my-rotate-25 relative w-fit ${wrapperClassName}`}>
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
-      >
+      <ScaleUpMotion>
         <img
           src={imgSrc}
           className={`block object-cover relative z-10 oval-shape img-shadow 
@@ -35,7 +31,7 @@ const ImgWithBorder = ({
           className=" hidden md:block oval-shape absolute w-full h-full bottom-0 left-6 object-border 
       md:portrait:-translate-x-28 md:portrait:translate-y-14"
         ></div>
-      </motion.div>
+      </ScaleUpMotion>
     </div>
   );
 };

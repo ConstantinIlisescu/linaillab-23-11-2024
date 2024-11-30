@@ -6,13 +6,15 @@ import MainServicesContainer from "@/components/MainServicesContainer";
 import { SERVICES } from "@/data/mainPage";
 import ContactMeBtn from "@/components/ContactMeBtn";
 import ImgWithBorder from "@/components/ImgWithBorder";
-import { motion } from "motion/react";
+import SlideFromRightMotion from "@/components/motions/SlideFromRightMotion";
+import ScaleUpMotion from "@/components/motions/ScaleUpMotion";
+import ArrowDownMotion from "@/components/motions/ArrowDownMotion";
 
 const Home = () => {
   useScrollToEffect();
 
   return (
-    <div className="my-bg-light overflow-hidden">
+    <div className="relative my-bg-light overflow-hidden">
       <div className="mx-auto w-full max-w-6xl">
         <div className="pt-16 md:pt-20 grid justify-items-stretch h-screen">
           <div
@@ -26,21 +28,19 @@ const Home = () => {
              md:portrait:-translate-y-96  md:portrait:translate-x-12
              ms-auto"
             >
-              <motion.div
-                initial={{ x: "-100vw" }}
-                animate={{ x: 0 }}
-                transition={{ type: "spring", stiffness: 100, delay: 0.9 }}
-              >
+              <SlideFromRightMotion delay={1.5}>
                 <h1 className="aclonica-regular text-start text-4xl md:text-6xl gradient-text mb-8">
                   ESCAPE <br />
                   YOUR <br />
                   EVERYDAY <br />
                   ROUTINE <br />
                 </h1>
+              </SlideFromRightMotion>
+              <ScaleUpMotion delay={2.5} stiffness={100} damping={50}>
                 <div className="flex justify-center w-full">
                   <ContactMeBtn />
                 </div>
-              </motion.div>
+              </ScaleUpMotion>
             </div>
             <ImgWithBorder
               imgSrc="images/hero.jpg"
@@ -52,7 +52,9 @@ const Home = () => {
           portrait:-translate-y-44
           md:portrait:-translate-y-[22rem]"
           >
-            <img src="ArrowDown.svg" alt="" className="h-10" />
+            <ArrowDownMotion delay={6}>
+              <img src="ArrowDown.svg" alt="" className="h-10" />
+            </ArrowDownMotion>
           </div>
         </div>
       </div>
