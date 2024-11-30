@@ -25,6 +25,7 @@ const ImgWithBorder = ({
           className={`block object-cover relative z-10 oval-shape img-shadow 
             portrait:w-[75vw] 
             portrait:-translate-x-12 portrait:translate-y-12
+            sm:portrait:w-[65vw] 
             md:portrait:-translate-x-28 md:portrait:translate-y-28
             landscape:w-[30vw]
             ${imgClassName}`}

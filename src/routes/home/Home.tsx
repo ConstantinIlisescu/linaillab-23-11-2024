@@ -22,6 +22,7 @@ const Home = () => {
             <div
               className="z-10 
              portrait:-translate-y-44
+             sm:portrait:-translate-y-52
              md:portrait:-translate-y-96  md:portrait:translate-x-12
              ms-auto"
             >
