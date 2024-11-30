@@ -4,8 +4,8 @@ import "./Home.css";
 import OutlineBtnWithIcon from "@/components/OutlineBtnWithIcon";
 import MainServicesContainer from "@/components/MainServicesContainer";
 import { SERVICES } from "@/data/mainPage";
-import HeroMobile from "./HeroMobile";
-import HeroDesktop from "./HeroDesktop";
+import ContactMeBtn from "@/components/ContactMeBtn";
+import ImgWithBorder from "@/components/ImgWithBorder";
 
 const Home = () => {
   useScrollToEffect();
@@ -14,11 +14,25 @@ const Home = () => {
     <div className="my-bg-light overflow-y-hidden">
       <div className="mx-auto w-full max-w-6xl">
         <div className="pt-10 md:pt-20 grid justify-items-stretch h-screen">
-          <div className=" hidden md:flex md:justify-self-center my-auto items-center gap-16 px-4">
-            <HeroDesktop />
+          <div className="flex flex-col-reverse justify-self-center my-auto md:items-center gap-16 px-4">
+            <div className="z-10 -translate-y-6">
+              <h1 className="aclonica-regular text-start text-5xl lg:text-7xl gradient-text mb-8">
+                ESCAPE <br />
+                YOUR <br />
+                EVERYDAY <br />
+                ROUTINE <br />
+              </h1>
+              <div className="flex justify-center w-full">
+                <ContactMeBtn />
+              </div>
+            </div>
+            <ImgWithBorder
+              imgSrc="images/hero.jpg"
+              imgAlt="oval image of a hand nails"
+            />
           </div>
-          <div className="relative md:hidden">
-            <HeroMobile />
+          <div className="flex justify-center w-full">
+            <img src="ArrowDown.svg" alt="" className="h-10" />
           </div>
         </div>
       </div>

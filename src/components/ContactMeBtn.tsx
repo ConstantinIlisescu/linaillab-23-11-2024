@@ -10,9 +10,9 @@ const ContactMeBtn = ({ additionalStyles }: ContactMeBtnProps) => {
     <Link to="#contact">
       <Button
         variant="ghost"
-        className={`main-button-gradient rounded-xl ${additionalStyles}`}
+        className={`main-button-gradient rounded-xl p-6 ${additionalStyles}`}
       >
-        <p className="p-1 aboreto-regular text-2xl md:text-xl">Contact Me</p>
+        <p className=" aboreto-regular text-2xl md:text-xl">Contact Me</p>
       </Button>
     </Link>
   );
