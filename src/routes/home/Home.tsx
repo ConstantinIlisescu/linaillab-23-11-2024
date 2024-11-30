@@ -14,9 +14,17 @@ const Home = () => {
     <div className="my-bg-light overflow-y-hidden">
       <div className="mx-auto w-full max-w-6xl">
         <div className="pt-16 md:pt-20 grid justify-items-stretch h-screen">
-          <div className="flex flex-col-reverse justify-self-center my-auto items-center gap-16 px-4">
-            <div className="z-10 -translate-y-32 ms-auto">
-              <h1 className="aclonica-regular text-start text-4xl lg:text-7xl gradient-text mb-8">
+          <div
+            className="flex justify-self-center my-auto items-center gap-16 px-4
+          portrait:flex-col-reverse"
+          >
+            <div
+              className="z-10 
+            portrait:-translate-y-44
+             md:portrait:-translate-y-72  md:portrait:translate-x-12
+             ms-auto"
+            >
+              <h1 className="aclonica-regular text-start text-4xl md:text-6xl gradient-text mb-8">
                 ESCAPE <br />
                 YOUR <br />
                 EVERYDAY <br />
@@ -31,7 +39,11 @@ const Home = () => {
               imgAlt="oval image of a hand nails"
             />
           </div>
-          <div className="flex justify-center w-full">
+          <div
+            className="flex justify-center w-full 
+          portrait:-translate-y-44
+          md:portrait:-translate-y-44"
+          >
             <img src="ArrowDown.svg" alt="" className="h-10" />
           </div>
         </div>

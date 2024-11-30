@@ -84,5 +84,11 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addVariant }) {
+      addVariant("portrait", "@media (orientation: portrait)");
+      addVariant("landscape", "@media (orientation: landscape)");
+    },
+  ],
 };
