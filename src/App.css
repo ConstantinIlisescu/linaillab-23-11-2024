@@ -129,7 +129,7 @@ body * {
 
 .gradient-text {
   background: linear-gradient(
-    170deg,
+    1deg,
     hsl(5deg 20% 74%) 0%,
     hsl(7deg 18% 70%) 21%,
     hsl(9deg 17% 66%) 38%,

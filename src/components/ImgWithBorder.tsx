@@ -12,10 +12,10 @@ const ImgWithBorder = ({
   imgAlt,
 }: ImgWithBorderProps) => {
   return (
-    <div className={`rotate-12 relative w-fit ${wrapperClassName}`}>
+    <div className={`my-rotate-25 relative w-fit ${wrapperClassName}`}>
       <img
         src={imgSrc}
-        className={`block object-cover relative z-10 oval-shape img-shadow w-[45vw] md:w-[30vw] xl:w-[35vw] max-w-md ${imgClassName}`}
+        className={`block object-cover relative z-10 oval-shape img-shadow w-[75vw] md:w-[30vw] xl:w-[35vw] max-w-md ${imgClassName}`}
         alt={imgAlt}
       />
       <div className="oval-shape absolute w-full h-full bottom-0 left-6 object-border"></div>
