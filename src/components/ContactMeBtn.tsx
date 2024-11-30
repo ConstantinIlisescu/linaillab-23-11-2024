@@ -7,10 +7,10 @@ interface ContactMeBtnProps {
 
 const ContactMeBtn = ({ additionalStyles }: ContactMeBtnProps) => {
   return (
-    <Link to="#contact">
+    <Link to="#contact" className="w-full">
       <Button
         variant="ghost"
-        className={`main-button-gradient rounded-xl p-6 ${additionalStyles}`}
+        className={`main-button-gradient rounded-xl p-7 w-full ${additionalStyles}`}
       >
         <p className=" aboreto-regular text-2xl md:text-xl">Contact Me</p>
       </Button>
