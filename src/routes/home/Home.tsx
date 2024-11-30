@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <div className="my-bg-light overflow-y-hidden">
       <div className="mx-auto w-full max-w-6xl">
-        <div className="pt-10 md:pt-20 grid justify-items-stretch h-screen">
+        <div className="pt-16 md:pt-20 grid justify-items-stretch h-screen">
           <div className="flex flex-col-reverse justify-self-center my-auto items-center gap-16 px-4">
-            <div className="z-10 -translate-y-28 ms-auto">
+            <div className="z-10 -translate-y-32 ms-auto">
               <h1 className="aclonica-regular text-start text-4xl lg:text-7xl gradient-text mb-8">
                 ESCAPE <br />
                 YOUR <br />

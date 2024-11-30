@@ -18,7 +18,7 @@ const ImgWithBorder = ({
         className={`block object-cover relative z-10 oval-shape img-shadow w-[75vw] md:w-[30vw] xl:w-[35vw] max-w-md ${imgClassName}`}
         alt={imgAlt}
       />
-      <div className="oval-shape absolute w-full h-full bottom-0 left-6 object-border"></div>
+      <div className=" hidden md:block oval-shape absolute w-full h-full bottom-0 left-6 object-border"></div>
     </div>
   );
 };
