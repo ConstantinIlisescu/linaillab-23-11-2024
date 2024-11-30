@@ -6,6 +6,7 @@ import MainServicesContainer from "@/components/MainServicesContainer";
 import { SERVICES } from "@/data/mainPage";
 import ContactMeBtn from "@/components/ContactMeBtn";
 import ImgWithBorder from "@/components/ImgWithBorder";
+import { motion } from "motion/react";
 
 const Home = () => {
   useScrollToEffect();
@@ -24,15 +25,21 @@ const Home = () => {
              md:portrait:-translate-y-96  md:portrait:translate-x-12
              ms-auto"
             >
-              <h1 className="aclonica-regular text-start text-4xl md:text-6xl gradient-text mb-8">
-                ESCAPE <br />
-                YOUR <br />
-                EVERYDAY <br />
-                ROUTINE <br />
-              </h1>
-              <div className="flex justify-center w-full">
-                <ContactMeBtn />
-              </div>
+              <motion.div
+                initial={{ x: "-100vw" }}
+                animate={{ x: 0 }}
+                transition={{ type: "spring", stiffness: 100, delay: 0.9 }}
+              >
+                <h1 className="aclonica-regular text-start text-4xl md:text-6xl gradient-text mb-8">
+                  ESCAPE <br />
+                  YOUR <br />
+                  EVERYDAY <br />
+                  ROUTINE <br />
+                </h1>
+                <div className="flex justify-center w-full">
+                  <ContactMeBtn />
+                </div>
+              </motion.div>
             </div>
             <ImgWithBorder
               imgSrc="images/hero.jpg"
