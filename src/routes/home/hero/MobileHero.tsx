@@ -10,7 +10,7 @@ const MobileHero = () => {
         <img
           src="images/hero.jpg"
           alt=""
-          className="w-full h-fit pt-16 fade-img"
+          className="w-full h-fit pt-6 fade-img"
         />
       </div>
       <div className=" px-9 z-10 -translate-y-32">
