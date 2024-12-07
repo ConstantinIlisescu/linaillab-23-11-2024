@@ -16,6 +16,7 @@ const DesktopHero = () => {
             <ImgWithBorder
               imgSrc="images/hero.jpg"
               imgAlt="hand showing beautiful brown long nails"
+              outlineBorder={true}
             />
           </div>
         </div>

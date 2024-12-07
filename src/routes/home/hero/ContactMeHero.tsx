@@ -3,7 +3,7 @@ import ContactMeBtn from "@/components/ContactMeBtn";
 
 const ContactMeHero = () => {
   return (
-    <ScaleUpMotion delay={2} stiffness={100} damping={50}>
+    <ScaleUpMotion delay={2.5} stiffness={100} damping={50}>
       <div className="flex justify-center w-full">
         <ContactMeBtn />
       </div>

@@ -1,46 +1,47 @@
-
 export const SERVICES = {
   title: "Services",
   services: [
     {
       title: "Manicure",
       href: "/services#manicure",
-      titleColour: "text-indigo-300",
-      description: "Indulge in a classic, gel or polish manicure",
-      buttonText: "Read More",
-      buttonAdditionalStyles: "text-indigo-300 border-indigo-300",
+      image: "services-manicure.jpg",
     },
     {
       title: "Pedicure",
       href: "/services#pedicure",
-      titleColour: "text-cyan-400",
-      description: "Pamper your toenails with a luxurious pedicure",
-      buttonText: "Read More",
-      buttonAdditionalStyles: "text-cyan-400 border-cyan-400",
+      image: "services-pedicure.jpg",
     },
     {
       title: "KART",
       href: "/services#kart",
-      titleColour: "text-emerald-400",
-      description: "Indulge in a KART spa pedicure",
-      buttonText: "Read More",
-      buttonAdditionalStyles: "text-emerald-400 border-emerald-400",
+      image: "services-kart.jpg",
+    },
+    {
+      title: "Onycholysis Cleaning",
+      href: "/services#onycholysis",
+      image: "services-onicholisis.jpg",
     },
     {
       title: "Fungal Cleaning",
       href: "/services#fungal-cleaning",
-      titleColour: "text-indigo-300",
-      description: "Fungal fix: Get your toes tappin' again",
-      buttonText: "Read More",
-      buttonAdditionalStyles: "text-indigo-300 border-indigo-300",
+      image: "services-fungal.jpg",
     },
     {
       title: "Nail Correction",
       href: "/services#nail-correction",
-      titleColour: "text-cyan-400",
-      description: "Ingrown woes? Find lasting relief ",
-      buttonText: "Read More",
-      buttonAdditionalStyles: "text-cyan-400 border-cyan-400",
+      image: "services-correction.jpg",
     },
   ],
 };
+
+export const TESTIMONIALS = [
+  "If i could give her hundreds stars, i would give it Excellent service from Lavinia! Not enough words to recommend her. She is skilled, professional, friendly and my pedicure look so clean and beautiful .Definitely i will come back, Highly recommend! Thanks",
+  "O recomand din tot sufletul ! Pedichiura mea niciodată nu a arătat atât de bine până să o întâlnesc pe ea 🫶 E o profesionistă , și asta se vede din atenția pe care o oferă detaliilor doar ca manichiura sau pedichiura ta să arate ca din revistă . O să revenim cu mare drag la tine 🥰",
+  "Super talented nail artist. Lavinia is very professional, knowledgeable, and very friendly. Top clean tools and the salon. I am so glad I met her. Also, I am so excited that I finally find someone who knows how to do professionally a pedicure. Simply amazing artist! 💓",
+  "The master is very attentive to clients, the location is pleasant, clean and professional.",
+  "Very experienced with medical pedicure. Very happy with the service. Thanks Lavinia",
+  "Best nails in town! Always happy with the result. Wouldn’t change Lavinia for anyone else! 10/10 💞",
+  "I am using L.I. Nail Lab services for a while now, and I've been always satisfied. She is professional, meticulously, and a lovely person 🫶 The environment it is perfect, very clean, and the tools are sterilised after each person. I would highly recommend her services. 💯",
+  "Prima persoana care reuseste sa imi faca manichiura perfecta! She is the first person that manages to make the perfect manicure for me, considering how pretentious I am. Thank you Lavinia 😘",
+  "If you want skill, creativity and attention to detail L.I Nail Lab is the right place for you! I always leave thrilled with the results!",
+];
