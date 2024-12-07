@@ -19,10 +19,7 @@ const ImgWithBorder = ({
             ${imgClassName}`}
         alt={imgAlt}
       />
-      <div
-        className=" hidden md:block oval-shape absolute w-full h-full bottom-0 left-6 object-border 
-      md:portrait:-translate-x-28 md:portrait:translate-y-14"
-      ></div>
+      <div className=" hidden md:block oval-shape absolute w-full h-full bottom-0 left-6 object-border"></div>
     </div>
   );
 };

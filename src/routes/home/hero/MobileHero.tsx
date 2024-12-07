@@ -4,7 +4,7 @@ import ArrowDownHero from "./ArrowDownHero";
 
 const MobileHero = () => {
   return (
-    <div className="flex flex-col items-center landscape:hidden ">
+    <div className="flex flex-col items-center landscape:hidden sm:hidden">
       <div className="image-container">
         <div className="csv-top z-10"></div>
         <img
