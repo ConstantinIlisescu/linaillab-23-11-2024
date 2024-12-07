@@ -1,0 +1,14 @@
+import ScaleUpMotion from "@/components/motions/ScaleUpMotion";
+import ContactMeBtn from "@/components/ContactMeBtn";
+
+const ContactMeHero = () => {
+  return (
+    <ScaleUpMotion delay={2} stiffness={100} damping={50}>
+      <div className="flex justify-center w-full">
+        <ContactMeBtn />
+      </div>
+    </ScaleUpMotion>
+  );
+};
+
+export default ContactMeHero;

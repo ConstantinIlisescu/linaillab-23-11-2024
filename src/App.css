@@ -151,22 +151,63 @@ body * {
 
 .gradient-text-light {
   background: linear-gradient(
-    0deg,
-    hsl(0deg 14% 99%) 0%,
-    hsl(0deg 15% 97%) 8%,
-    hsl(1deg 15% 96%) 17%,
-    hsl(1deg 15% 95%) 25%,
-    hsl(1deg 15% 93%) 33%,
-    hsl(2deg 15% 92%) 42%,
-    hsl(2deg 15% 90%) 50%,
-    hsl(3deg 15% 89%) 58%,
-    hsl(3deg 15% 88%) 67%,
-    hsl(3deg 15% 86%) 75%,
-    hsl(4deg 16% 85%) 83%,
-    hsl(4deg 16% 84%) 92%,
-    hsl(4deg 16% 82%) 100%
+    180deg,
+    hsl(26deg 28% 95%) 0%,
+    hsl(20deg 26% 93%) 6%,
+    hsl(16deg 24% 92%) 13%,
+    hsl(14deg 23% 90%) 21%,
+    hsl(12deg 23% 88%) 29%,
+    hsl(10deg 22% 86%) 39%,
+    hsl(9deg 21% 85%) 51%,
+    hsl(8deg 21% 83%) 62%,
+    hsl(7deg 21% 81%) 71%,
+    hsl(6deg 20% 79%) 79%,
+    hsl(6deg 20% 78%) 87%,
+    hsl(5deg 20% 76%) 93%,
+    hsl(5deg 20% 74%) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.test {
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23FBF8F7"><path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path></svg>');
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23FBF8F7"><path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path></svg>');
+  mask-repeat: no-repeat;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Required for absolute positioning of CSV elements */
+  overflow: hidden; /* Clip overflowing content */
+  background-color: #aa8b6f;
+  mask-image: linear-gradient(to bottom, #f6f2ef 70%, transparent);
+}
+
+.csv-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures full width coverage */
+  height: 50px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23FBF8F7"><path d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path><path d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path></svg>')
+    no-repeat;
+  background-size: cover; /* Scales the SVG to fill the element */
+}
+
+.fade-img {
+  mask-image: linear-gradient(to bottom, #f6f2ef 70%, transparent);
+}
+
+.csv-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ensures full width coverage */
+  height: 50px;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23F6F2EF"><path d="M0 0v99.7C62 69 122.4 48.7 205 66c83.8 17.6 160.5 20.4 240-12 54-22 110-26 173-10a392.2 392.2 0 0 0 222-5c55-17 110.3-36.9 160-27.2V0H0Z" opacity=".5"></path><path d="M0 0v74.7C62 44 122.4 28.7 205 46c83.8 17.6 160.5 25.4 240-7 54-22 110-21 173-5 76.5 19.4 146.5 23.3 222 0 55-17 110.3-31.9 160-22.2V0H0Z"></path></svg>')
+    no-repeat;
+  background-size: cover; /* Scales the SVG to fill the element */
 }

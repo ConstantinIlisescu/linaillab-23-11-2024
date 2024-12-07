@@ -4,60 +4,16 @@ import "./Home.css";
 import OutlineBtnWithIcon from "@/components/OutlineBtnWithIcon";
 import MainServicesContainer from "@/components/MainServicesContainer";
 import { SERVICES } from "@/data/mainPage";
-import ContactMeBtn from "@/components/ContactMeBtn";
-import ImgWithBorder from "@/components/ImgWithBorder";
-import SlideFromRightMotion from "@/components/motions/SlideFromRightMotion";
-import ScaleUpMotion from "@/components/motions/ScaleUpMotion";
-import ArrowDownMotion from "@/components/motions/ArrowDownMotion";
+import DesktopHero from "./hero/DesktopHero";
+import MobileHero from "./hero/MobileHero";
 
 const Home = () => {
   useScrollToEffect();
 
   return (
     <div className="relative my-bg-light overflow-hidden">
-      <div className="mx-auto w-full max-w-6xl">
-        <div className="pt-16 md:pt-20 grid justify-items-stretch h-screen">
-          <div
-            className="flex justify-self-center my-auto items-center gap-16 px-4
-          portrait:flex-col-reverse"
-          >
-            <div
-              className="z-10 
-             portrait:-translate-y-44
-             sm:portrait:-translate-y-52
-             md:portrait:-translate-y-96  md:portrait:translate-x-12
-             ms-auto"
-            >
-              <SlideFromRightMotion delay={1.5}>
-                <h1 className="aclonica-regular text-start text-4xl md:text-6xl gradient-text mb-8">
-                  ESCAPE <br />
-                  YOUR <br />
-                  EVERYDAY <br />
-                  ROUTINE <br />
-                </h1>
-              </SlideFromRightMotion>
-              <ScaleUpMotion delay={2.5} stiffness={100} damping={50}>
-                <div className="flex justify-center w-full">
-                  <ContactMeBtn />
-                </div>
-              </ScaleUpMotion>
-            </div>
-            <ImgWithBorder
-              imgSrc="images/hero.jpg"
-              imgAlt="oval image of a hand nails"
-            />
-          </div>
-          <div
-            className="flex justify-center w-full 
-          portrait:-translate-y-44
-          md:portrait:-translate-y-[22rem]"
-          >
-            <ArrowDownMotion delay={6}>
-              <img src="ArrowDown.svg" alt="" className="h-10" />
-            </ArrowDownMotion>
-          </div>
-        </div>
-      </div>
+      <DesktopHero />
+      <MobileHero />
       <div className="pt-28 w-full flex ">
         <div className="welcome-overlay hidden"></div>
         <Container>
