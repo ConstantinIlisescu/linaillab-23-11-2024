@@ -1,6 +1,5 @@
-export const CONTACT_ME_TITLE = ["Contact", "Info"];
+
 export const ADDRESS_AND_CONTACT_INFO = {
-  address: ["110 Miners Way", "Hednesford", "WS12 4WH"],
   contactInfo: [
     {
       description: "+44 07719 492181",
@@ -25,7 +24,6 @@ export const ADDRESS_AND_CONTACT_INFO = {
   ],
 };
 export const SCHEDULE = {
-  title: ["Working", "Hours"],
   scheduledHours: [
     { day: "Monday", status: "Closed" },
     { day: "Tuesday", status: "Closed" },
