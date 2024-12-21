@@ -54,9 +54,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="text-xl max-w-lg ">
+          <p className=" md:text-lg max-w-lg ">
             To book an appointment, please leave me a message on
-            facebook/instagram or any of the below contact methods, and I will
+            facebook/instagram or any of the above contact methods, and I will
             get back to you as soon as I am free.
           </p>
           <iframe

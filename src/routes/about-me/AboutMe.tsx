@@ -5,11 +5,12 @@ import ImgWithBorder from "@/components/ImgWithBorder";
 import ArrowDownHero from "../home/hero/ArrowDownHero";
 import MySpaceMobile from "./my-space/MySpaceMobile";
 import MySpaceDesktop from "./my-space/MySpaceDesktop";
+import OutlineBtnWithIcon from "@/components/OutlineBtnWithIcon";
 
 const AboutMe = () => {
   return (
     <section className=" my-bg-light overflow-hidden">
-      <div className="py-28 mx-auto w-full">
+      <div className="pt-28 mx-auto w-full">
         <div className="flex portrait:flex-col justify-self-center my-auto items-center gap-16 px-4">
           <div className="w-[30vw] portrait:w-[70vw] portrait:md:w-[50vw] portrait:translate-x-10">
             <ImgWithBorder
@@ -39,7 +40,7 @@ const AboutMe = () => {
           <ArrowDownHero />
         </div>
       </div>
-      <div className="py-28 about-me-bg-image">
+      <div className="py-28 testimonial-bg-image">
         <Container className="flex portrait:flex-col justify-center z-10 relative items-center">
           <div>
             <h2 className="text-4xl text-center aclonica-regular gradient-text pb-8">
@@ -64,6 +65,16 @@ const AboutMe = () => {
       </div>
       <MySpaceMobile />
       <MySpaceDesktop />
+      <div className="about-me-bg-image py-20">
+        <Container className="flex flex-col justify-center z-10 relative items-center">
+          <p className="md:text-lg max-w-md pb-8">
+            If you are looking for a friendly, reliable and talented nail
+            technician who can transform your nails into works of art, look no
+            further than me! 😊
+          </p>
+          <OutlineBtnWithIcon text="Contact me" href="#contact" />
+        </Container>
+      </div>
     </section>
   );
 };
