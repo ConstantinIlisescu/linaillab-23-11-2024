@@ -1,11 +1,9 @@
-import useScrollToEffect from "@/utils/hooks/useScrollToEffect";
 import Container from "@/components/ui/container";
 import { AsyncImage } from "loadable-image";
 import { imageLinksNumber } from "@/data/myWorkPage";
 import { Fade } from "transitions-kit";
 
 const MyWork = () => {
-  useScrollToEffect();
   const options = [];
 
   for (let i = 0; i <= imageLinksNumber; i++) {
@@ -22,10 +20,10 @@ const MyWork = () => {
               width: "100%",
               height: "auto",
               aspectRatio: 9 / 12,
-              borderRadius: 3,
+              borderRadius: 10,
             }}
-            loader={<div style={{ background: "rgba(61, 216, 240,0.1)" }} />}
-            error={<div style={{ background: "rgba(61, 216, 240,0.1)" }} />}
+            loader={<div style={{ background: "rgba(183, 145, 123,0.5)" }} />}
+            error={<div style={{ background: "rgba(183, 145, 123,0.5)" }} />}
             Transition={Fade}
           />
         ))}
