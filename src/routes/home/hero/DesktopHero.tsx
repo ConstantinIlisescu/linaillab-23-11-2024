@@ -1,6 +1,6 @@
 import ImgWithBorder from "@/components/ImgWithBorder";
 import TextHero from "./TextHero";
-import ContactMeHero from "./ContactMeHero";
+import MyServicesBtn from "./MyServicesBtn";
 import ArrowDownHero from "./ArrowDownHero";
 
 const DesktopHero = () => {
@@ -10,7 +10,7 @@ const DesktopHero = () => {
         <div className="flex portrait:flex-col-reverse justify-self-center my-auto items-center gap-16 px-4">
           <div className="z-10 ms-auto portrait:-translate-y-80 portrait:translate-x-20">
             <TextHero />
-            <ContactMeHero />
+            <MyServicesBtn />
           </div>
           <div className="w-[30vw] portrait:w-[60vw] portrait:-translate-x-36">
             <ImgWithBorder

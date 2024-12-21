@@ -1,4 +1,4 @@
-import SlideFromRightMotion from "@/components/motions/SlideFromRightMotion";
+import { SlideFromRightMotion } from "@/components/motions/SlideFromRightMotion";
 
 const TextHero = () => {
   return (

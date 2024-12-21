@@ -41,7 +41,7 @@ const Home = () => {
       </div>
       <div className=" pt-28 mx-auto w-full max-w-6xl">
         <Container>
-          <div className="max-w-4xl mx-auto ">
+          <div id="services" className="max-w-4xl mx-auto ">
             <h2 className="text-4xl pb-10 text-center aclonica-regular gradient-text">
               {SERVICES.title}
             </h2>

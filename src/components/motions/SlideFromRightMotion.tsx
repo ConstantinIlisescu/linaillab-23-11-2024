@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
-interface SlideFromRightMotionProps {
+interface SlideMotionProps {
   delay?: number;
   children: React.ReactNode;
 }
 
-const SlideFromRightMotion = ({
+export const SlideFromRightMotion = ({
   delay = 1,
   children,
-}: SlideFromRightMotionProps) => {
+}: SlideMotionProps) => {
   return (
     <motion.div
       initial={{ x: "-100vw" }}
@@ -24,4 +24,22 @@ const SlideFromRightMotion = ({
   );
 };
 
-export default SlideFromRightMotion;
+export const SlideFromLeftMotion = ({
+  delay = 1,
+  children,
+}: SlideMotionProps) => {
+  return (
+    <motion.div
+      initial={{ x: "200vw" }}
+      animate={{ x: 0 }}
+      transition={{
+        type: "spring",
+        stiffness: 100,
+        damping: 30,
+        delay: delay,
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};

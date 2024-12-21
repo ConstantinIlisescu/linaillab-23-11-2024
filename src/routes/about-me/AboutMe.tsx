@@ -1,78 +1,70 @@
 import Container from "@/components/ui/container";
-import {
-  BOTTOM_PARAGRAPH_SECTION,
-  MIDDLE_PARAGRAPH_SECTION,
-  TOP_SECTION,
-} from "@/data/aboutMePage";
-import MainMyServicesBtn from "@/components/MainMyServicesBtn";
 import "./AboutMe.css";
-import useScrollToEffect from "@/utils/hooks/useScrollToEffect";
+import MyServicesBtn from "../home/hero/MyServicesBtn";
+import ImgWithBorder from "@/components/ImgWithBorder";
+import ArrowDownHero from "../home/hero/ArrowDownHero";
+import MySpaceMobile from "./my-space/MySpaceMobile";
+import MySpaceDesktop from "./my-space/MySpaceDesktop";
 
 const AboutMe = () => {
-  useScrollToEffect();
   return (
-    <>
-      <div className="pt-28 about-me-top-section-bg-img mx-auto w-full">
-        <Container>
-          <div className=" md:flex md:flex-row-reverse">
-            <div className="px-4 flex flex-col  items-end">
-              <div className="text-4xl md:text-6xl pb-4 text-cyan-500 text-end font-italiana">
-                {TOP_SECTION.titleFirstRow}
-              </div>
-              <div className="text-7xl md:text-8xl pb-4 text-lime-500 text-end font-italiana">
-                {TOP_SECTION.titleSecondRow}
-              </div>
-              <p className="text-gray-700  md:text-lg pb-8  max-w-lg">
-                {TOP_SECTION.paragraph}
-              </p>
-            </div>
-            <img
-              className="w-3/4 md:w-2/4 my-rounded-left-full"
-              src={TOP_SECTION.imgPath}
-              alt="Image of myself with medium length curly hair and green background"
+    <section className=" my-bg-light overflow-hidden">
+      <div className="py-28 mx-auto w-full">
+        <div className="flex portrait:flex-col justify-self-center my-auto items-center gap-16 px-4">
+          <div className="w-[30vw] portrait:w-[70vw] portrait:md:w-[50vw] portrait:translate-x-10">
+            <ImgWithBorder
+              imgSrc="about-me/about-me-picture.png"
+              imgAlt="Image of myself with medium length curly hair and green background"
+              outlineBorder={true}
+              rotate={false}
             />
           </div>
-        </Container>
-        <div className="w-min mx-auto">
-          <MainMyServicesBtn />
+          <div className="portrait:-translate-y-36">
+            <h1 className="aclonica-regular portrait:-translate-y-4 text-start text-4xl md:text-6xl gradient-text mb-8">
+              My <br />
+              Story <br />
+            </h1>
+            <p className="md:text-lg pb-8 portrait:pb-16 max-w-lg">
+              I have always been passionate about nails since I was a little
+              girl, when I used to do my friends' nails for fun. Now, I love to
+              create beautiful nail designs for my clients, using a variety of
+              techniques and products.
+            </p>
+            <div className="w-full flex portrait:justify-center">
+              <MyServicesBtn />
+            </div>
+          </div>
+        </div>
+        <div className="portrait:-translate-y-24">
+          <ArrowDownHero />
         </div>
       </div>
-      <div className="pt-8 about-me-middle-section-bg-img">
-        <Container>
-          {MIDDLE_PARAGRAPH_SECTION.map((paragraph, index) => (
-            <p
-              key={"middle-paragraph-" + index}
-              className="text-gray-700 pb-4 md:text-lg md:max-w-xl md:ps-8 text-balance"
-            >
-              {paragraph}
+      <div className="py-28 about-me-bg-image">
+        <Container className="flex portrait:flex-col justify-center z-10 relative items-center">
+          <div>
+            <h2 className="text-4xl text-center aclonica-regular gradient-text pb-8">
+              Trainings
+            </h2>
+            <p className="md:text-lg pb-8 max-w-md">
+              I am qualified and certified in manicure, pedicure, gel, polish
+              gel, KART pedicure, and nail art. I have completed several
+              extensive courses and immersive workshops to keep up with the
+              latest trends and innovations in nail care, all while prioritizing
+              and maintaining the highest health and safety standards, and
+              meticulous hygiene practices. I take hygiene incredibly seriously
+              and have an unwavering commitment to never compromise on it.
             </p>
-          ))}
-        </Container>
-      </div>
-      <div className="pt-8">
-        <Container>
-          <div className="flex flex-row justify-between items-center mx-auto max-w-md">
-            <div className="w-24 h-2 rounded-tl-full rounded-br-full bg-cyan-400"></div>
-            <div className="w-4 h-4 rounded-bl-full rounded-tr-full bg-cyan-400"></div>
-            <div className="w-4 h-4 rounded-full bg-cyan-400"></div>
-            <div className="w-4 h-4 rounded-tl-full rounded-br-full bg-cyan-400"></div>
-            <div className="w-24 h-2 rounded-bl-full rounded-tr-full bg-cyan-400"></div>
           </div>
+          <img
+            src="about-me/diplomas.png"
+            className="w-[50vw] portrait:w-[80vw]"
+            alt="Diplomas of nail technician courses"
+          />
         </Container>
       </div>
-      <div className="pt-8">
-        <Container>
-          {BOTTOM_PARAGRAPH_SECTION.map((paragraph, index) => (
-            <p
-              key={"bottom-paragraph-" + index}
-              className="text-gray-700 md:text-lg md:max-w-md mx-auto pb-4 text-balance"
-            >
-              {paragraph}
-            </p>
-          ))}
-        </Container>
-      </div>
-    </>
+      <MySpaceMobile />
+      <MySpaceDesktop />
+    </section>
   );
 };
 

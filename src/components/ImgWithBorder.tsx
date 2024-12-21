@@ -5,6 +5,7 @@ interface ImgWithBorderProps {
   wrapperClassName?: string | undefined;
   outlineBorder?: boolean;
   overlay?: boolean;
+  rotate?: boolean;
 }
 
 const ImgWithBorder = ({
@@ -14,9 +15,14 @@ const ImgWithBorder = ({
   imgAlt,
   outlineBorder = false,
   overlay = false,
+  rotate = true,
 }: ImgWithBorderProps) => {
   return (
-    <div className={`my-rotate-25 relative w-fit ${wrapperClassName}`}>
+    <div
+      className={` relative w-fit ${wrapperClassName} ${
+        rotate && "my-rotate-25"
+      }`}
+    >
       {overlay && (
         <div className="oval-shape absolute w-full h-full top-0 left-0 my-overlay-transparent z-20"></div>
       )}

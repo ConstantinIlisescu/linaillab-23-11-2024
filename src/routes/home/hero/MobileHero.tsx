@@ -1,5 +1,5 @@
 import TextHero from "./TextHero";
-import ContactMeHero from "./ContactMeHero";
+import MyServicesBtn from "./MyServicesBtn";
 import ArrowDownHero from "./ArrowDownHero";
 
 const MobileHero = () => {
@@ -15,7 +15,7 @@ const MobileHero = () => {
       </div>
       <div className=" px-9 z-10 -translate-y-32">
         <TextHero />
-        <ContactMeHero />
+        <MyServicesBtn />
       </div>
       <div className="-translate-y-28">
         <ArrowDownHero />

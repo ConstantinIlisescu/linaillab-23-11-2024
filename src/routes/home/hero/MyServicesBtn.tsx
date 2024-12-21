@@ -1,7 +1,7 @@
 import ScaleUpMotion from "@/components/motions/ScaleUpMotion";
 import ContactMeBtn from "@/components/ContactMeBtn";
 
-const ContactMeHero = () => {
+const MyServicesBtn = () => {
   return (
     <ScaleUpMotion delay={2.5} stiffness={100} damping={50}>
       <div className="flex justify-center w-full">
@@ -11,4 +11,4 @@ const ContactMeHero = () => {
   );
 };
 
-export default ContactMeHero;
+export default MyServicesBtn;
