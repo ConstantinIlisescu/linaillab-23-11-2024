@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/sheet";
 import { Link } from "react-router-dom";
 import { CgMenuRight } from "react-icons/cg";
+import { HashLink } from "react-router-hash-link";
 
 const NavLinksMobile = () => {
   return (
@@ -27,6 +28,15 @@ const NavLinksMobile = () => {
               </Link>
             </SheetClose>
           ))}
+          <SheetClose asChild>
+            <HashLink
+              key={`nav-link-50000`}
+              to="#contact"
+              className="font-medium"
+            >
+              Contact me
+            </HashLink>
+          </SheetClose>
         </div>
       </SheetContent>
     </Sheet>
