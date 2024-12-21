@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 interface ContactMeBtnProps {
   additionalStyles?: string;
@@ -7,14 +7,14 @@ interface ContactMeBtnProps {
 
 const ContactMeBtn = ({ additionalStyles }: ContactMeBtnProps) => {
   return (
-    <Link to="#contact" className="w-full">
+    <HashLink to="#contact" className="w-full">
       <Button
         variant="ghost"
         className={`main-button-gradient rounded-xl p-5  ${additionalStyles}`}
       >
         <p className=" aboreto-regular text-xl md:text-xl">Contact Me</p>
       </Button>
-    </Link>
+    </HashLink>
   );
 };
 

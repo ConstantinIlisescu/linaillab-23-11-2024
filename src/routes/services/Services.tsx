@@ -1,4 +1,3 @@
-import useScrollToEffect from "@/utils/hooks/useScrollToEffect";
 import "./Services.css";
 import Container from "@/components/ui/container";
 import ServiceCard from "@/components/ServiceCard";
@@ -10,7 +9,6 @@ import {
 import ServicesAdditionalInfo from "@/components/ServicesAdditionalInfo";
 
 const Services = () => {
-  useScrollToEffect();
   return (
     <>
       <div id={FIRST_SERVICE.id} className="pt-28">

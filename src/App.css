@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Aclonica&family=Love+Light&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Aclonica&family=Love+Light&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --light-colour: 251, 248, 247; /* #F6F2EF light braun */
   --dark-colour: 93, 64, 50; /* #5D4032 dark  braun */
@@ -50,6 +50,10 @@
   font-family: "Love Light", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
