@@ -1,5 +1,6 @@
 import { routes } from "@/constants/routes";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const NavLinks = () => {
   return (
@@ -9,6 +10,9 @@ const NavLinks = () => {
           {route.label}
         </Link>
       ))}
+      <HashLink key={`nav-link-50000`} to="#contact" className="font-medium">
+        Contact me
+      </HashLink>
     </div>
   );
 };
