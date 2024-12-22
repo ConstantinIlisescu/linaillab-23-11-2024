@@ -4,14 +4,20 @@ import ArrowDownHero from "./ArrowDownHero";
 
 const MobileHero = () => {
   return (
-    <div className="flex flex-col items-center landscape:hidden sm:hidden ">
-      <img src="images/hero.png" alt="" className="w-[100vw] pt-6" />
-      <div className=" px-9 z-10 -translate-y-56">
-        <TextHero />
-        <MyServicesBtn />
-      </div>
-      <div className="-translate-y-40">
-        <ArrowDownHero />
+    <div className="flex flex-col items-center landscape:hidden sm:hidden relative overflow-hidden">
+      <img
+        src="images/mobile-hero.png"
+        alt=""
+        className="block w-full h-screen object-cover object-center fade-img"
+      />
+      <div className="absolute bottom-1/3">
+        <div>
+          <TextHero />
+          <MyServicesBtn />
+        </div>
+        <div className="translate-y-32">
+          <ArrowDownHero />
+        </div>
       </div>
     </div>
   );
