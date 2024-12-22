@@ -1,4 +1,3 @@
-import ImgWithBorder from "@/components/ImgWithBorder";
 import TextHero from "./TextHero";
 import MyServicesBtn from "./MyServicesBtn";
 import ArrowDownHero from "./ArrowDownHero";
