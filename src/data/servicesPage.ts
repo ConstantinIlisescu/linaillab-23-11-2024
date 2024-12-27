@@ -119,7 +119,7 @@ export const SERVICES_LIST = [
     description:
       "The Kart system effectively treats most types of fungal infections and solves the problem of unpleasant foot odour with a guarantee of an atraumatic experience during the treatment.",
     callToAction: {
-      title: "What is KART Pedicure used for?",
+      title: "What to find out more?",
       sections: [
         {
           title: "What is KART Pedicure used for?",
@@ -325,7 +325,7 @@ export const SERVICES_LIST = [
     description:
       "The issue of ingrown toenails impacts individuals of all ages. The painful wounds that emerge due to ingrown toenails can be so distressing that some turn to the commonly known drastic solution of completely removing the nail plate. However, I offer a less invasive but effective method of treatment.",
     callToAction: {
-      title: "Who will benefit from nail correction treatment?",
+      title: "What to find out more?",
       sections: [
         {
           title: "Who will benefit from nail correction treatment?",
