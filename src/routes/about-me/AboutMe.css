@@ -1,22 +1,6 @@
- .testimonial-bg-image {
-  position: relative;
-  background-image: url("images/mobile-reviews.jpg");
-  background-size: cover;
-}
-
-.testimonial-bg-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(var(--light-call-to-action), 0.9);
-}
-
 .about-me-bg-image {
   position: relative;
-  background-image: url("about-me/call-to-action-bg.jpg");
+  background-image: url("/about-me/call-to-action-bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -30,4 +14,3 @@
   height: 100%;
   background-color: rgba(var(--light-call-to-action), 0.85);
 }
-

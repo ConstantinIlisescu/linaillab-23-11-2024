@@ -1,6 +1,6 @@
 .testimonial-bg-image {
   position: relative;
-  background-image: url("images/mobile-reviews.jpg");
+  background-image: url("/images/mobile-reviews.jpg");
   background-size: cover;
 }
 
