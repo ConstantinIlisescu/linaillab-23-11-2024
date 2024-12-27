@@ -1,6 +1,7 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import OutlineRoundIcon from "@/components/OutlineRoundIcon";
 import { RxDot } from "react-icons/rx";
+import { FaArrowRight } from "react-icons/fa6";
+import { Button } from "./ui/button";
 
 interface ServicesAdditionalInfoProps {
   additionalInfoObject: {
@@ -23,15 +24,14 @@ const ServicesAdditionalInfo = ({
   return (
     <Sheet>
       <SheetTrigger>
-        <div className="flex items-center gap-2 pb-4 text-cyan-500 font-italiana text-xl tracking-widest">
-          <p>{additionalInfoObject.title}</p>
-          <OutlineRoundIcon />
-        </div>
+        <Button variant="link" className="rounded-2xl">
+          <span className="dark-text-color aboreto-regular text-base">
+            {additionalInfoObject.title}
+          </span>
+          <FaArrowRight className="ms-1 h-4 w-4" />
+        </Button>
       </SheetTrigger>
-      <SheetContent
-        className="pt-16 w-[90vw] ml-[5vw] overflow-scroll"
-        side="left"
-      >
+      <SheetContent className="pt-16 w-[90vw] overflow-scroll" side={"left"}>
         <>
           {additionalInfoObject.sections.map((section, index) => (
             <div

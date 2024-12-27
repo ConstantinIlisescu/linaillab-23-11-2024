@@ -1,42 +1,71 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import ContactMeBtn from "./ContactMeBtn";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+
+import { FaArrowRight } from "react-icons/fa6";
+import { Button } from "./ui/button";
 
 interface ServiceCardProp {
-  price: string;
-  serviceName: string;
-  serviceDescription: string;
-  duration: string;
-  additionalInfo: string;
+  service: {
+    price: string;
+    serviceName: string;
+    serviceDescription: string;
+    duration: string;
+    additionalInfo?: string;
+  };
 }
 
-const ServiceCard = ({
-  price,
-  serviceName,
-  serviceDescription,
-  duration,
-  additionalInfo,
-}: ServiceCardProp) => {
+const ServiceCard = ({ service }: ServiceCardProp) => {
   return (
-    <div className="border-2 rounded-3xl shadow-md p-4 h-fit">
-      <div className="flex justify-between">
-        <p className="font-italiana text-3xl text-cyan-500">{price}</p>
-        <ContactMeBtn />
+    <div className="flex flex-col items-center gap-2 pt-5">
+      <h3 className="aclonica-regular gradient-text text-large">
+        {service.serviceName}
+      </h3>
+      <div className="flex justify-between w-[90%] ps-5">
+        <span className="text-xl gradient-text">{service.price}</span>
+        <Sheet>
+          <SheetTrigger>
+            <Button variant="link" className="rounded-2xl">
+              <span className="dark-text-color aboreto-regular text-base">
+                Read more
+              </span>
+              <FaArrowRight className="ms-1 h-4 w-4" />
+            </Button>
+          </SheetTrigger>
+          <SheetContent
+            className="pt-28 w-[90vw] overflow-y-scroll"
+            side={"left"}
+          >
+            <div className="max-w-lg flex flex-col gap-6 mx-auto">
+              <div>
+                <h3 className="aclonica-regular gradient-text text-xl md:text-2xl mb-2">
+                  Wat is {service.serviceName}?
+                </h3>
+                <p className="pb-4 md:text-lg">{service.serviceDescription}</p>
+              </div>
+              <div>
+                <h3 className="aclonica-regular gradient-text text-xl md:text-2xl">
+                  Duration
+                </h3>
+                <p className="pb-4 md:text-lg">{service.duration}</p>
+              </div>
+              <div>
+                <h3 className="aclonica-regular gradient-text text-xl md:text-2xl">
+                  Price
+                </h3>
+                <p className="pb-4 md:text-lg">{service.price}</p>
+              </div>
+              {service.additionalInfo && (
+                <div>
+                  <h3 className="aclonica-regular gradient-text text-xl md:text-2xl">
+                    Additional info:
+                  </h3>
+                  <p className="pb-4 md:text-lg">{service.additionalInfo}</p>
+                </div>
+              )}
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
-      <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>{serviceName}</AccordionTrigger>
-          <AccordionContent>
-            <p className="pb-4">{serviceDescription}</p>
-            <p className="pb-4 text-sm">Duration: {duration}</p>
-            <p className="text-sm">{additionalInfo}</p>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <img src="images/eclipse-divider.png" alt="divider" />
     </div>
   );
 };
