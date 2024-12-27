@@ -3,6 +3,7 @@ import Container from "@/components/ui/container";
 import ServiceCard from "@/components/ServiceCard";
 import { SERVICES_LIST } from "@/data/servicesPage";
 import ServicesAdditionalInfo from "@/components/ServicesAdditionalInfo";
+import OutlineBtnWithIcon from "@/components/OutlineBtnWithIcon";
 
 const Services = () => {
   return (
@@ -14,7 +15,7 @@ const Services = () => {
         <div
           id={service.id}
           key={"service_list_" + index}
-          className="py-28 overflow-hidden"
+          className="py-12 overflow-hidden"
         >
           <div
             className={`flex flex-col items-center pb-8 md:pb-0 testimonial-bg-image ${
@@ -53,7 +54,7 @@ const Services = () => {
               </div>
             </Container>
           </div>
-          <Container className="max-w-3xl pt-16">
+          <Container className="max-w-3xl py-5">
             <div
               className={
                 service.services.length === 1
@@ -69,6 +70,9 @@ const Services = () => {
               ))}
             </div>
           </Container>
+          <div className="flex justify-center py-10">
+            <OutlineBtnWithIcon text="Contact me" href="#contact" />
+          </div>
         </div>
       ))}
     </section>

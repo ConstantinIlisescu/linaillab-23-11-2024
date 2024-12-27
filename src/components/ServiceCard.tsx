@@ -9,7 +9,7 @@ interface ServiceCardProp {
     serviceName: string;
     serviceDescription: string;
     duration: string;
-    additionalInfo?: string;
+    additionalInfo?: string[];
   };
 }
 
@@ -58,7 +58,14 @@ const ServiceCard = ({ service }: ServiceCardProp) => {
                   <h3 className="aclonica-regular gradient-text text-xl md:text-2xl">
                     Additional info:
                   </h3>
-                  <p className="pb-4 md:text-lg">{service.additionalInfo}</p>
+                  {service.additionalInfo.map((info, index) => (
+                    <p
+                      key={"service_info_" + index}
+                      className="pb-4 md:text-lg"
+                    >
+                      {info}
+                    </p>
+                  ))}
                 </div>
               )}
             </div>
