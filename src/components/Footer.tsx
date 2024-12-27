@@ -24,8 +24,11 @@ const Footer = () => {
                 Opening Hours
               </h2>
               <div>
-                {SCHEDULE.scheduledHours.map((schedule) => (
-                  <div className="flex justify-between max-60 pt-1 text-lg text-balance">
+                {SCHEDULE.scheduledHours.map((schedule, index) => (
+                  <div
+                    key={"footer_schedule_" + index}
+                    className="flex justify-between max-60 pt-1 text-lg text-balance"
+                  >
                     <p>{schedule.day}</p>
                     <p>{schedule.status}</p>
                   </div>
@@ -37,19 +40,22 @@ const Footer = () => {
                 Contact Info
               </h2>
               <div className="mx-auto">
-                {ADDRESS_AND_CONTACT_INFO.contactInfo.map((contactItem) => (
-                  <a
-                    className="flex justify-start pt-3 gap-2"
-                    href={contactItem.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {icons[contactItem.icon]}
-                    <p className=" pt-1 md:text-lg text-balance pe-2">
-                      {contactItem.description}
-                    </p>
-                  </a>
-                ))}
+                {ADDRESS_AND_CONTACT_INFO.contactInfo.map(
+                  (contactItem, index) => (
+                    <a
+                      key={"footer_contact_" + index}
+                      className="flex justify-start pt-3 gap-2"
+                      href={contactItem.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {icons[contactItem.icon]}
+                      <p className=" pt-1 md:text-lg text-balance pe-2">
+                        {contactItem.description}
+                      </p>
+                    </a>
+                  )
+                )}
               </div>
             </div>
           </div>

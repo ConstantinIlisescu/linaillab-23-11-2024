@@ -12,10 +12,8 @@ const ArrowDownMotion = ({
 }: ArrowDownMotionProps) => {
   return (
     <motion.div
-      initial={{ scale: 0 }}
       animate={{
         y: [0, 10, 0], // Move down by 10px, then back to original position
-        scale: 1,
       }}
       transition={{
         scale: { delay: delay, duration: duration },

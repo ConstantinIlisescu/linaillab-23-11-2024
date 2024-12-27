@@ -4,13 +4,13 @@ import ArrowDownHero from "./ArrowDownHero";
 
 const DesktopHero = () => {
   return (
-    <div className="hidden landscape:block sm:block relative overflow-hidden">
+    <div className="hidden landscape:flex sm:flex relative overflow-hidden  flex-col items-center">
       <img
         src="images/desktop-hero.png"
         alt=""
         className="block w-full h-screen object-cover object-center fade-img"
       />
-      <div className="absolute bottom-1/3 left-1/3  landscape:bottom-1/4 landscape:left-20">
+      <div className="absolute bottom-1/3 ">
         <TextHero />
         <MyServicesBtn />
       </div>

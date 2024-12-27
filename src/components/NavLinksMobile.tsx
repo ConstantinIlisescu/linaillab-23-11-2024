@@ -18,9 +18,8 @@ const NavLinksMobile = () => {
       <SheetContent className="max-w-64 pt-16">
         <div className="flex flex-col gap-4 text-left ">
           {routes.map((route, index) => (
-            <SheetClose asChild>
+            <SheetClose asChild key={`nav-link-${index}`}>
               <Link
-                key={`nav-link-${index}`}
                 to={route.href}
                 className="text-2xl font-medium transition-colors"
               >
