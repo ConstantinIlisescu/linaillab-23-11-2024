@@ -31,10 +31,9 @@ const Home = () => {
               neighbourhood, offering a unique and personalized experience that
               combines style and exceptional service. My cosy and inviting salon
               features top-of-the-line products, exclusive polish brands and
-              colours, a range of free soft drinks and homemade coffee. My
-              commitment to quality ensures that every visit to my salon feels
-              like a luxurious and indulgent escape in the comfort of your own
-              neighbourhood.
+              colours. My commitment to quality ensures that every visit to my
+              salon feels like a luxurious and indulgent escape in the comfort
+              of your own neighbourhood.
             </p>
           </div>
         </Container>

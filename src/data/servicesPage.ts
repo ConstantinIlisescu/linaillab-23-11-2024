@@ -200,7 +200,7 @@ export const SERVICES_LIST = [
   },
   {
     title: "Fungal Nail Cleaning",
-    id: "fungal-nail-cleaning",
+    id: "fungal-cleaning",
     imgPath: "/services/fungal-nail.png",
     description:
       "Are you troubled by the discomfort and aesthetic concerns caused by fungal nail infections? Fungal nail, also known as onychomycosis, is a common condition that occurs when fungi invade the nails, leading to various symptoms and challenges.",
@@ -269,7 +269,104 @@ export const SERVICES_LIST = [
             },
             {
               description:
-                "Thorough cleaning of the affected nails to remove debris, dead tissue, and any topical fungal material using spezialized tools.",
+                "Thorough cleaning of the affected nails to remove debris, and the affected nail using spezialized tools and professional treatments",
+            },
+            {
+              description:
+                "Trimming and shaping of the nails to improve overall hygiene and appearance.",
+            },
+            {
+              description:
+                "Application of antifungal oil to the affected nails.",
+            },
+          ],
+        },
+        {
+          title: "",
+          descriptions: [
+            {
+              description:
+                "Don't let fungal nail infections impact your confidence and well-being. By understanding the causes, symptoms, and preventive measures, you can take proactive steps towards maintaining healthy nails. If you suspect a fungal nail infection, consult with a healthcare professional for personalized guidance and treatment options.",
+            },
+          ],
+        },
+      ],
+    },
+    services: [
+      {
+        price: "£75 - £95",
+        serviceName: "Fungal Nail Cleaning",
+        serviceDescription:
+          "Fungal nail is a fungal infection that affects the nails, most commonly the toenails. The infection typically begins at the edges of the nails and can spread across the entire nail plate, resulting in thickening and distortion of the nail shape. ",
+        duration: "approximately 1 hour 30 mins",
+        additionalInfo: [
+          "Prices range from £75 to £95.",
+          "Treatment costs are dependent on the number of affected nails.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Onycholysis Cleaning",
+    id: "onycholysis",
+    imgPath: "/services/onycholisis.jpg",
+    description:
+      "Onycholysis cleaning involves carefully treating nails where the nail plate has separated from the nail bed. The process includes gently removing debris or buildup under the detached nail area to prevent infections and trimming the separated portion to minimize further damage. The affected area is disinfected to reduce the risk of fungal or bacterial infections and moisturized to support healing. ",
+    callToAction: {
+      title: "What to find out more?",
+      sections: [
+        {
+          title: "What is Onycholysis Cleaning?",
+          imagePath: "/services/onycholisis.jpg",
+          descriptions: [
+            {
+              description:
+                "Onycholysis cleaning involves carefully treating nails where the nail plate has separated from the nail bed. The process includes gently removing debris or buildup under the detached nail area to prevent infections and trimming the separated portion to minimize further damage. The affected area is disinfected to reduce the risk of fungal or bacterial infections and moisturized to support healing. Proper care and hygiene practices are essential during this process, including avoiding trauma, excessive water exposure, or harsh chemicals. This procedure is best performed by trained professionals to ensure safety and promote healthy nail regrowth.",
+            },
+            {
+              description:
+                "Important to note: It's not recommended to attempt Onycholysis cleaning yourself at home.",
+            },
+          ],
+        },
+        {
+          title: "Causes:",
+          descriptions: [
+            {
+              description: "Onycholysis can have many causes, including:",
+            },
+            {
+              description:
+                "Injury: Trauma to the nail can cause it to separate.",
+            },
+            {
+              description:
+                "Fungal infections: Like onychomycosis, where the fungus weakens the nail's attachment.",
+            },
+            {
+              description:
+                "Medical conditions: Certain conditions like psoriasis, thyroid disorders, and even some medications can contribute to onycholysis.",
+            },
+            {
+              description:
+                "Irritants: Exposure to harsh chemicals can also weaken the nail.",
+            },
+            {
+              description: "",
+            },
+          ],
+        },
+
+        {
+          title: "What does this service include?",
+          descriptions: [
+            {
+              description:
+                "This service inculdes a range of procedures and treatments aimed at addressing and improving the condition of the nail",
+            },
+            {
+              description:
+                "Thorough cleaning of the affected nails to remove debris, and the affected nail using spezialized tools and professional treatments.",
             },
             {
               description:
@@ -303,17 +400,6 @@ export const SERVICES_LIST = [
         additionalInfo: [
           "Prices range from £35 to £55.",
           "Treatment costs are dependent on the number of affected nails. ",
-        ],
-      },
-      {
-        price: "£75 - £95",
-        serviceName: "Fungal Nail Cleaning",
-        serviceDescription:
-          "Fungal nail is a fungal infection that affects the nails, most commonly the toenails. The infection typically begins at the edges of the nails and can spread across the entire nail plate, resulting in thickening and distortion of the nail shape. ",
-        duration: "approximately 1 hour 30 mins",
-        additionalInfo: [
-          "Prices range from £75 to £95.",
-          "Treatment costs are dependent on the number of affected nails.",
         ],
       },
     ],
@@ -389,7 +475,7 @@ export const SERVICES_LIST = [
     },
     services: [
       {
-        price: "£150",
+        price: "£75 - £150",
         serviceName: "Nail Correction",
         serviceDescription:
           "Toenail bracing involves applying a titanium wire and hardened composite material directly to the nailbed, lifting and shaping the toenail sides with an LED light. The brace acts as a spring, gently straightening and reducing pressure against the skin, ensuring proper nail growth and reshaping the pathway.",
@@ -397,6 +483,9 @@ export const SERVICES_LIST = [
         additionalInfo: [
           "£25 per Titanium Bracing System per small toenail",
           "£150 per Titanium Bracing System per big toenail.",
+          "----------------------------------------------------------------",
+          "£25 per Composite nail correction System per small toenail.",
+          "£75 per Composite nail correction System per big toenail.",
         ],
       },
     ],

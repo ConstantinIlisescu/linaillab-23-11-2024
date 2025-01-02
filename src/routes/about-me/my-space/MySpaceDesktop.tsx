@@ -8,7 +8,7 @@ const MySpaceDesktop = () => {
         className=""
         alt="My cosy garden room salon"
       />
-      <div className="absolute top-14 right-36">
+      <div className="absolute top-44 right-96">
         <h2 className="text-4xl  aclonica-regular gradient-text ">My Space</h2>
         <p className="text-lg pt-8 pb-8 max-w-lg">
           Welcome to my cosy garden room salon, thoughtfully designed with your
