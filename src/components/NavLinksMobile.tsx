@@ -16,7 +16,7 @@ const NavLinksMobile = () => {
         <CgMenuRight className="size-10 " />
       </SheetTrigger>
       <SheetContent className="max-w-64 pt-16">
-        <div className="flex flex-col gap-4 text-left ">
+        <div className="flex flex-col gap-4 text-left pt-10">
           {routes.map((route, index) => (
             <SheetClose asChild key={`nav-link-${index}`}>
               <Link
