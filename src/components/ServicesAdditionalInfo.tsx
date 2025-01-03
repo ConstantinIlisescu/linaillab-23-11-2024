@@ -47,6 +47,7 @@ const ServicesAdditionalInfo = ({
                     src={section.imagePath}
                     alt="..."
                     className="w-28 my-rounded-left-full"
+                    loading="lazy"
                   />
                 )}
               </div>

@@ -47,11 +47,11 @@ const Home = () => {
               {SERVICES.services.map((service, index) => (
                 <div
                   key={"service_" + index}
-                  className="max-w-60 justify-self-center relative"
+                  className=" justify-self-center relative"
                 >
                   <ImgWithBorder
                     imgSrc={`images/${service.image}`}
-                    imgAlt="hand showing beautiful brown long nails"
+                    imgAlt="Showing an example of the service"
                     outlineBorder={false}
                     overlay={true}
                   />

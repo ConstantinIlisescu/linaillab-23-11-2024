@@ -10,6 +10,7 @@ const MySpaceMobile = () => {
         src="about-me/my-space-image-desk.webp"
         className=""
         alt="Diplomas of nail technician courses"
+        loading="lazy"
       />
       <div className="mx-auto">
         <p className="md:text-lg pt-8 pb-8 max-w-md">

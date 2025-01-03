@@ -7,6 +7,7 @@ const MySpaceDesktop = () => {
         src="about-me/my-space-image-desk.webp"
         className=""
         alt="My cosy garden room salon"
+        loading="lazy"
       />
       <div className="absolute top-44 right-96">
         <h2 className="text-4xl  aclonica-regular gradient-text ">My Space</h2>

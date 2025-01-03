@@ -23,13 +23,14 @@ const Services = () => {
             }`}
           >
             <img
-              className={`z-10 md:max-w-[50vw] ${
+              className={`z-10 w-[600px] md:max-w-[50vw] ${
                 index % 2 === 0
                   ? "my-rounded-right-full xl:pe-12"
                   : "my-rounded-left-full xl:ps-12"
               }`}
               src={service.imgPath}
               alt="art hand nails"
+              loading="lazy"
             />
 
             <Container className="z-10 flex justify-center">

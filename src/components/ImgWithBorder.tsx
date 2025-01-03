@@ -28,9 +28,10 @@ const ImgWithBorder = ({
       )}
       <img
         src={imgSrc}
-        className={`block w-full object-cover relative z-10 oval-shape img-shadow 
+        className={`block w-60 h-[auto] object-cover relative z-10 oval-shape img-shadow 
             ${imgClassName}`}
         alt={imgAlt}
+        loading="lazy"
       />
       {outlineBorder && (
         <div className=" hidden md:block oval-shape absolute w-full h-full bottom-0 left-6 object-border"></div>

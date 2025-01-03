@@ -60,6 +60,7 @@ const AboutMe = () => {
             src="about-me/diplomas.webp"
             className="w-[50vw] portrait:w-[80vw]"
             alt="Diplomas of nail technician courses"
+            loading="lazy"
           />
         </Container>
       </div>

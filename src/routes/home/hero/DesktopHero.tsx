@@ -7,8 +7,9 @@ const DesktopHero = () => {
     <div className="hidden landscape:flex sm:flex relative overflow-hidden  flex-col items-center">
       <img
         src="images/desktop-hero.webp"
-        alt=""
+        alt="colorful shapes background"
         className="block w-full h-screen object-cover object-center fade-img"
+        loading="lazy"
       />
       <div className="absolute bottom-1/3 ">
         <TextHero />
