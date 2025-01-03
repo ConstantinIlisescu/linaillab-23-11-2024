@@ -66,9 +66,11 @@ const Footer = () => {
             get back to you as soon as I am free.
           </p>
           <iframe
+            title="google map showing my address which is Cannock, Hednesford, 110 Miners way, WS12 4WH"
             className="rounded-3xl w-[100%] h-96 max-w-5xl"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2417.046325648041!2d-2.0150400118932463!3d52.71330905000383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a75a2a6cc418d%3A0x5b39d3cff4554809!2sL.I.%20Nail%20Lab!5e0!3m2!1sen!2suk!4v1717875626577!5m2!1sen!2suk"
             loading="lazy"
+            referrerPolicy="no-referrer"
           ></iframe>
 
           <Logo />

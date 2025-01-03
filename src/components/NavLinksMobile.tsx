@@ -12,7 +12,7 @@ import { HashLink } from "react-router-hash-link";
 const NavLinksMobile = () => {
   return (
     <Sheet>
-      <SheetTrigger className="md:hidden">
+      <SheetTrigger className="md:hidden" aria-label="Open navigation">
         <CgMenuRight className="size-10 " />
       </SheetTrigger>
       <SheetContent className="max-w-64 pt-16">

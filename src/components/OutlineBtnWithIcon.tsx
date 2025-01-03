@@ -16,7 +16,10 @@ const OutlineBtnWithIcon = ({
   return (
     <HashLink to={href}>
       <Button variant="link" className={`rounded-2xl ${additionalStyles}`}>
-        <span className="dark-text-color aboreto-regular text-base">
+        <span
+          className="dark-text-color aboreto-regular text-base"
+          aria-label="Read more about the services"
+        >
           {text}
         </span>
         <FaArrowRight className="ms-1 h-4 w-4" />

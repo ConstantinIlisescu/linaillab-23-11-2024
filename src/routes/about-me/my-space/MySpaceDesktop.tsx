@@ -4,7 +4,7 @@ const MySpaceDesktop = () => {
   return (
     <Container className="hidden lg:flex flex-col justify-center py-28 relative">
       <img
-        src="about-me/my-space-image-desk.png"
+        src="about-me/my-space-image-desk.webp"
         className=""
         alt="My cosy garden room salon"
       />

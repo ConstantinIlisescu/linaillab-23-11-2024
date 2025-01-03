@@ -7,7 +7,7 @@ const MySpaceMobile = () => {
         My Space
       </h2>
       <img
-        src="about-me/my-space-image-desk.png"
+        src="about-me/my-space-image-desk.webp"
         className=""
         alt="Diplomas of nail technician courses"
       />

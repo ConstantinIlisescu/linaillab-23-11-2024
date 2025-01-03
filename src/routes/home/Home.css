@@ -1,24 +1,3 @@
-.welcome-overlay {
-  width: 50vw;
-  height: 90vh;
-  left: -30vw;
-  background-image: url("/images/welcome.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-radius: 9999px;
-}
-
-.welcome-overlay::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(var(--overlay));
-  border-radius: 9999px;
-}
 
 .my-rotate-25 {
   --tw-rotate: 35deg;

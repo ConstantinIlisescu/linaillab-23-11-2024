@@ -6,7 +6,7 @@ const DesktopHero = () => {
   return (
     <div className="hidden landscape:flex sm:flex relative overflow-hidden  flex-col items-center">
       <img
-        src="images/desktop-hero.png"
+        src="images/desktop-hero.webp"
         alt=""
         className="block w-full h-screen object-cover object-center fade-img"
       />

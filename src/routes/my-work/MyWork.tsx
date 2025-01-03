@@ -7,7 +7,7 @@ const MyWork = () => {
   const options = [];
 
   for (let i = 0; i <= imageLinksNumber; i++) {
-    options.push(`myWork/${i}-.jpg`);
+    options.push(`myWork/${i}-.webp`);
   }
   return (
     <Container className=" pt-24">

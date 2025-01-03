@@ -4,32 +4,32 @@ export const SERVICES = {
     {
       title: "Manicure",
       href: "/services#manicure",
-      image: "services-manicure.jpg",
+      image: "services-manicure.webp",
     },
     {
       title: "Pedicure",
       href: "/services#pedicure",
-      image: "services-pedicure.jpg",
+      image: "services-pedicure.webp",
     },
     {
       title: "KART",
       href: "/services#kart",
-      image: "services-kart.jpg",
+      image: "services-kart.webp",
     },
     {
       title: "Onycholysis Cleaning",
       href: "/services#onycholysis",
-      image: "services-onicholisis.jpg",
+      image: "services-onicholisis.webp",
     },
     {
       title: "Fungal Cleaning",
       href: "/services#fungal-cleaning",
-      image: "services-fungal.jpg",
+      image: "services-fungal.webp",
     },
     {
       title: "Nail Correction",
       href: "/services#nail-correction",
-      image: "services-correction.jpg",
+      image: "services-correction.webp",
     },
   ],
 };

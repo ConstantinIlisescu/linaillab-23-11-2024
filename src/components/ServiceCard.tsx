@@ -72,7 +72,7 @@ const ServiceCard = ({ service }: ServiceCardProp) => {
           </SheetContent>
         </Sheet>
       </div>
-      <img src="images/eclipse-divider.png" alt="divider" />
+      <img src="images/eclipse-divider.webp" alt="divider" />
     </div>
   );
 };

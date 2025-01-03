@@ -2,7 +2,7 @@ export const SERVICES_LIST = [
   {
     title: "Manicure",
     id: "manicure",
-    imgPath: "/services/manicure.jpg",
+    imgPath: "/services/manicure.webp",
     description:
       "Manicure is a pampering hand treatment that involves trimming, shaping, and filing nails, as well as neatening the cuticles. The final touch involves elegantly painting your nails with a colour of your preference.",
     services: [
@@ -79,7 +79,7 @@ export const SERVICES_LIST = [
   {
     title: "Pedicure",
     id: "pedicure",
-    imgPath: "/services/pedicure.jpg",
+    imgPath: "/services/pedicure.webp",
     description:
       "Pedicure is a cosmetic treatment for toenails, offering a range of methods. At my salon, you'll enjoy a comfortable seat as I provide the following:",
     services: [
@@ -116,7 +116,7 @@ export const SERVICES_LIST = [
   {
     title: "KART Spa Pedicure",
     id: "kart",
-    imgPath: "/services/kart.png",
+    imgPath: "/services/kart.webp",
     description:
       "The Kart system effectively treats most types of fungal infections and solves the problem of unpleasant foot odour with a guarantee of an atraumatic experience during the treatment.",
     callToAction: {
@@ -124,7 +124,7 @@ export const SERVICES_LIST = [
       sections: [
         {
           title: "What is KART Pedicure used for?",
-          imagePath: "/services/kart.png",
+          imagePath: "/services/kart.webp",
           descriptions: [
             {
               description:
@@ -202,7 +202,7 @@ export const SERVICES_LIST = [
   {
     title: "Fungal Nail Cleaning",
     id: "fungal-cleaning",
-    imgPath: "/services/fungal-nail.png",
+    imgPath: "/services/fungal-nail.webp",
     description:
       "Are you troubled by the discomfort and aesthetic concerns caused by fungal nail infections? Fungal nail, also known as onychomycosis, is a common condition that occurs when fungi invade the nails, leading to various symptoms and challenges.",
     callToAction: {
@@ -210,7 +210,7 @@ export const SERVICES_LIST = [
       sections: [
         {
           title: "What is Fungal Nail Cleaning?",
-          imagePath: "/services/fungal-nail.png",
+          imagePath: "/services/fungal-nail.webp",
           descriptions: [
             {
               description:
@@ -310,7 +310,7 @@ export const SERVICES_LIST = [
   {
     title: "Onycholysis Cleaning",
     id: "onycholysis",
-    imgPath: "/services/onycholisis.jpg",
+    imgPath: "/services/onycholisis.webp",
     description:
       "Onycholysis cleaning involves carefully treating nails where the nail plate has separated from the nail bed. The process includes gently removing debris or buildup under the detached nail area to prevent infections and trimming the separated portion to minimize further damage. The affected area is disinfected to reduce the risk of fungal or bacterial infections and moisturized to support healing. ",
     callToAction: {
@@ -318,7 +318,7 @@ export const SERVICES_LIST = [
       sections: [
         {
           title: "What is Onycholysis Cleaning?",
-          imagePath: "/services/onycholisis.jpg",
+          imagePath: "/services/onycholisis.webp",
           descriptions: [
             {
               description:
@@ -408,7 +408,7 @@ export const SERVICES_LIST = [
   {
     title: "Nail Correction",
     id: "nail-correction",
-    imgPath: "/services/nail-correction.png",
+    imgPath: "/services/nail-correction.webp",
     description:
       "The issue of ingrown toenails impacts individuals of all ages. The painful wounds that emerge due to ingrown toenails can be so distressing that some turn to the commonly known drastic solution of completely removing the nail plate. However, I offer a less invasive but effective method of treatment.",
     callToAction: {
@@ -416,7 +416,7 @@ export const SERVICES_LIST = [
       sections: [
         {
           title: "Who will benefit from nail correction treatment?",
-          imagePath: "/services/nail-correction.png",
+          imagePath: "/services/nail-correction.webp",
           descriptions: [
             {
               description:

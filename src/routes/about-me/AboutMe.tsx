@@ -14,7 +14,7 @@ const AboutMe = () => {
         <div className="flex portrait:flex-col justify-self-center my-auto items-center gap-16 px-4">
           <div className="w-[30vw] portrait:w-[70vw] portrait:md:w-[50vw] portrait:translate-x-10">
             <ImgWithBorder
-              imgSrc="about-me/about-me-picture.png"
+              imgSrc="about-me/about-me-picture.webp"
               imgAlt="Image of myself with medium length curly hair and green background"
               outlineBorder={true}
               rotate={false}
@@ -57,7 +57,7 @@ const AboutMe = () => {
             </p>
           </div>
           <img
-            src="about-me/diplomas.png"
+            src="about-me/diplomas.webp"
             className="w-[50vw] portrait:w-[80vw]"
             alt="Diplomas of nail technician courses"
           />

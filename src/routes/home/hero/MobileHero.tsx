@@ -6,7 +6,7 @@ const MobileHero = () => {
   return (
     <div className="flex flex-col items-center landscape:hidden sm:hidden relative overflow-hidden">
       <img
-        src="images/mobile-hero.png"
+        src="images/mobile-hero.webp"
         alt=""
         className="block w-full h-screen object-cover object-center fade-img"
       />

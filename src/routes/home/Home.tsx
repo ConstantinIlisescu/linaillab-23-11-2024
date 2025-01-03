@@ -16,7 +16,6 @@ const Home = () => {
       <DesktopHero />
       <MobileHero />
       <div className="landscape:pt-28 w-full flex ">
-        <div className="welcome-overlay hidden"></div>
         <Container>
           <div className="max-w-lg mx-auto">
             <div className="text-4xl pb-10">
@@ -63,7 +62,7 @@ const Home = () => {
                       </h3>
                       <OutlineBtnWithIcon
                         href={service.href}
-                        text="Read more"
+                        text="Check service"
                       />
                     </div>
                   </div>
